@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Website</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Box Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="">
+    </a>
+    <!-- Menu Icon -->
+    <!-- Links -->
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a id="aboutus" href="#about">About Us</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="auth.php">My account</a></li>
+      <li><a href="review.html">Review</a></li>
+      
+    </ul>
+    <!-- Icon -->
+    <a href="#products"><div class="header-icon">
+      
+      <i class='bx bx-cart-alt'></i>
+      <i class='bx bx-menu' id="menu-icon"></i>
+    </div>
+   </a> 
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Start your day <br> with coffee</h1>
+      <p>We believe coffee is more than just a drink, it’s a craft. From the precise roasting of our beans to the rich, velvety crema of our signature espresso, every cup is a masterpiece designed for the true connoisseur. <br>  Step inside and taste the difference that passion makes.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/9hiwetna.jpeg" alt="">
+    </div>
+    <div class="about-text">
+      <h2>Our History</h2>
+      <p>It all started in a small garage with nothing but a second-hand roaster and a passion for the perfect bean. What began as a personal quest to find the richest flavors of East Africa and Central America soon turned into a mission to share those discoveries with our neighbors.
+
+      <p>In 2015, we opened our first doors here in Rades, dedicated to the belief that coffee should never be rushed. Over the years, our space has changed, but our method hasn't: we still roast in small batches, we still pour by hand, and we still treat every guest like the very first person who walked through our doors a decade ago. This is our history, and every cup we serve is a new chapter.</p>
+</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="heading">
+      <h2>Our Popular Products</h2>
+    </div>
+    <!-- Container -->
+    <div class="products-container">
+
+      <div class="box">
+        <img src="img/americain.png" alt="Americano">
+        <h3>Americano</h3>
+        <div class="content">
+          <span>1.6 TND</span>
+          <button onclick="buyNow('Americano', 1.6)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/lattee.png" alt="lattee">
+        <h3>Latte</h3>
+        <div class="content">
+          <span>2 TND</span>
+          <button onclick="buyNow('Latte', 2)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/iced coffee.webp" alt="Iced coffee">
+        <h3>Iced coffee</h3>
+        <div class="content">
+          <span>4 TND</span>
+          <button onclick="buyNow('Iced Coffee', 4)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/Espresso_Coffee_PNG.png" alt="Espresso">
+        <h3>Espresso</h3>
+        <div class="content">
+          <span>1.2 TND</span>
+          <button onclick="buyNow('Espresso', 1.2)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/tea.png" alt="tea">
+        <h3>Tea</h3>
+        <div class="content">
+          <span>1 TND</span>
+          <button onclick="buyNow('Tea', 1)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="img/hot chocolate.webp" alt="hot choc">
+        <h3>Hot Chocolate</h3>
+        <div class="content">
+          <span>3 TND</span>
+          <button onclick="buyNow('Hot Chocolate', 3)" class="cart-btn">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customers Section -->
+<section class="customers" id="customers">
+    <div class="heading">
+        <h2>Our Customers</h2>
+    </div>
+
+    <div class="customers-container" id="reviews-container"></div>
+
+    <div style="text-align:center; margin-top:1.5rem;">
+        <button id="more-btn">›</button>
+    </div>
+
+</section>
+
+  <hr>
+  
+  <section class="footer">
+
+    <div class="footer-box">
+      <h3>9hiwetna</h3>
+      <p>You can find us on all social media platforms.</p>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Support</h3>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+    </div>
+
+    <div class="footer-box">
+      <h3>View Guides</h3>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Posts</a></li>
+      <li><a href="#">Our Branches</a></li>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <div class="contact">
+        <span><i class='bx bxs-map'></i>Rades , 2040</span>
+        <span><i class='bx bxs-phone'></i>+216 55 5555 555</span>
+        <span><i class='bx bxs-envelope'></i>info@9hiwetna.com</span>
+      </div>
+    </div>
+
+  </section>
+<!-- Payment Modal -->
+<div id="payModal">
+  <div class="modal-box">
+    <h2>Payment</h2>
+    <div id="order-summary"></div>
+    <form action="payment.php" method="POST">
+      <input type="hidden" name="item_name" id="input-name">
+      <input type="hidden" name="item_price" id="input-price">
+
+      <label>Name on Card</label>
+      <input type="text" name="card_name" required placeholder="Your Name">
+
+      <label>Card Number</label>
+      <input type="text" name="card_number" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+
+      <div class="expiry-cvv">
+        <div>
+          <label>Expiry</label>
+          <input type="text" name="expiry" placeholder="MM/YY" required>
+        </div>
+        <div>
+          <label>CVV</label>
+          <input type="password" name="cvv" maxlength="4" placeholder="•••">
+        </div>
+      </div>
+
+      <button type="submit" class="btn-pay">Pay Now</button>
+      <button type="button" class="btn-cancel-modal" 
+              onclick="document.getElementById('payModal').style.display='none'">
+        Cancel
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal">
+  <div class="modal-box">
+    <h2>You're not logged in</h2>
+    <p>Please log in or create an account to place an order.</p>
+    <a href="auth.php" class="btn-login-redirect">Login / Register</a>
+    <button class="btn-cancel-modal"
+            onclick="document.getElementById('loginModal').style.display='none'">
+      Cancel
+    </button>
+  </div>
+</div>
+<!-- Copyright -->
+  <div class="copyright">
+    <p>&#169; 9hiwetna All Right Reserved</p>
+  </div>
+
+  <!-- Link to JavaScript -->
+
+<script src="main.js"></script>
+</body>
+</html>
